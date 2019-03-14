@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameServer.Cache.AccountCache">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAgIGAAAAACAAEAAACAAAAIAAAA=</HashCode>
+      <FileName>Cache\AccountCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Caches">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Cache\Caches.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.UserCache">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAACAAAAgAGAAABACEAkAAAEAAIEIAAgg=</HashCode>
+      <FileName>Cache\UserCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Fight.FightCache">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAABQAAAAAgAAAAAAAAAAABAAEAAIAAAAAAAAgA=</HashCode>
+      <FileName>Cache\Fight\FightCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Fight.FightRoom">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAgAAggACAAkBASAoAAAAQAQBgFIAACAAAAAIA=</HashCode>
+      <FileName>Cache\Fight\FightRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Fight.LibraryModel">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKAgAAAAA=</HashCode>
+      <FileName>Cache\Fight\LibraryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Fight.RoundModel">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAAEAACAEAAAAAAAAAQEAgCAAAAAAA=</HashCode>
+      <FileName>Cache\Fight\RoundModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Match.MatchCache">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAACAAAEAAAAAAIANEAAAAIAEAAAAAAgA=</HashCode>
+      <FileName>Cache\Match\MatchCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Cache.Match.MatchRoom">
+    <Position X="14.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAgAAAgAAAAEACAAAAAAAAAEEAABIAAIAAAAAAAA=</HashCode>
+      <FileName>Cache\Match\MatchRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Logic.AccountHandler" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAAAQFAA=</HashCode>
+      <FileName>Logic\AccountHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="accountCache" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Logic.ChatHandler" BaseTypeListCollapsed="true">
+    <Position X="8" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAQAAAAAAAABAAAAAQAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Logic\ChatHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="userCache" />
+      <Field Name="matchCache" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Logic.FightHandler" BaseTypeListCollapsed="true">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAQAEJEAAAABAAAAEAAAAgBAAAAAAAABIA=</HashCode>
+      <FileName>Logic\FightHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fightCache" />
+      <Field Name="userCache" />
+      <Field Name="matchCache" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Logic.MatchHandler" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgIEAAAQAQAAAAAAAABAAAAABAAAABBAAAAAAABAA=</HashCode>
+      <FileName>Logic\MatchHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="matchCache" />
+      <Field Name="userCache" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Logic.UserHandler" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAQAAAAAAAAAAAAQBAAAAAAAABAAAAQBAA=</HashCode>
+      <FileName>Logic\UserHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="userCache" />
+      <Field Name="accountCache" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Model.AccountModel">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Model\AccountModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.Model.UserModel">
+    <Position X="16.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAAgAAAARAgAAQAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Model\UserModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameServer.NetMsgCenter" BaseTypeListCollapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAIQAAABQI=</HashCode>
+      <FileName>NetMsgCenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="account" />
+      <Field Name="user" />
+      <Field Name="match" />
+      <Field Name="chat" />
+      <Field Name="fight" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameServer.Program">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AhpilyServer.ClientPeer" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.ClientPeerPool" Collapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.EncodeTool" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.ServerPeer">
+    <Position X="22.5" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.SingleExecute" Collapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.SocketMsg" Collapsed="true">
+    <Position X="30.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.Concurrent.ConcurrentInt" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.Timer.TimerManager" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.Timer.TimerModel" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AhpilyServer.Tool.ConnHelp" Collapsed="true">
+    <Position X="30.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="GameServer.Logic.IHandler">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Logic\IHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AhpilyServer.IApplication" Collapsed="true">
+    <Position X="25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Delegate Name="GameServer.Logic.StartFight" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\MatchHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="AhpilyServer.ExecuteDelegate" Collapsed="true">
+    <Position X="25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="AhpilyServer.Timer.TimerDelegate" Collapsed="true">
+    <Position X="26.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
